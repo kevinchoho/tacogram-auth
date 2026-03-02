@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   get("/login", {:controller => "sessions", :action => "new"})
   get("/logout", {:controller => "sessions", :action => "destroy"})
-
+    
   # TODO: map landing page (aka root route) to controller and action
   # get("/", {:controller => "", :action => ""})
+  root "posts#index"
 end
-root "posts#index"
