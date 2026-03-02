@@ -9,3 +9,4 @@ Rails.application.routes.draw do
   # TODO: map landing page (aka root route) to controller and action
   # get("/", {:controller => "", :action => ""})
 end
+root "posts#index"
